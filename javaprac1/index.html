@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>practice</title>
+	<link rel="stylesheet" href="style.css" type="text/css">
+<link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Oswald" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+
+	<script type="text/javascript">
+	
+	function myCity(image,id){
+    	document.getElementById("bgimage").style.backgroundImage= image;
+    	document.getElementById("bgcolor").style.display='block';  
+
+    	document.getElementById("eat-text").style.display='none'; 
+    	document.getElementById("play-text").style.display='none'; 
+    	document.getElementById("explore-text").style.display='none'; 
+
+    	document.getElementById(id).style.display='block';  
+	}
+
+	</script>
+</head>
+<body  id="bgimage">
+<h1 id="h1">Welcome to Japan</h1>
+<p class="sub">Let's find something for you.</p>
+
+<form>
+<input id="btn1" type="button" value="Eat" onclick=myCity("url('eat.jpg')","eat-text")></input>
+<input id="btn2" type="button" value="Play" onclick=myCity("url('play.jpg')","play-text")></input>
+<input id="btn3" type="button" value="Explore" onclick=myCity("url('explore.jpg')","explore-text")></input>
+</form>
+
+<div id="bgcolor">
+<p id="eat-text">Japanese cuisine (和食, washoku) offers an abundance of gastronomical delights with a boundless variety of regional and seasonal dishes as well as international cuisine. Restaurants range from mobile food stands to centuries old ryotei, atmospheric drinking places, seasonally erected terraces over rivers, cheap chain shops and unique theme restaurants about ninja and robots.Many restaurants are specialized in a single type of dish, while others offer a variety of dishes. <br>
+<em class="right">Source : Japan-guide.com</em></p>
+<p id="play-text">There are countless local festivals (matsuri) in Japan because almost every shrine celebrates one of its own. Most festivals are held annually and celebrate the shrine's deity or a seasonal or historical event. Some festival are held over several days.
+An important element of Japanese festivals are processions, in which the local shrine's kami (Shinto deity) is carried through the town in mikoshi (palanquins). It is the only time of the year when the kami leaves the shrine to be carried around town.<br>
+<em class="right">Source : Japan-guide.com</em></p>
+<p id="explore-text">Kyoto (京都, Kyōto) served as Japan's capital and the emperor's residence from 794 until 1868. Kyoto was destroyed by many wars and fires, but due to its historic value, the city was dropped from the list of target cities for the atomic bomb and spared from air raids during World War II. Countless temples, shrines and other historically priceless structures survive in the city today.<br>
+<em class="right">Source : Japan-guide.com</em></p>
+</div>
+
+</div>
+
+</body>
+</html>
